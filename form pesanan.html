@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ID">
+	<head>
+		<title>Form Pesanan Minuman</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">List Pesanan Minuman</h1>
+			<form method="POST" action="registrasi.php">
+				<fieldset style="border:1px solid">
+					<p><strong>Silahkan Lengkapi data diri sebelum memesan :</strong></p>
+					<p>
+						<label>Nama Lengkap</label>
+						<input type="text" name="nama" value="" size="40">
+					</p>
+					<p>
+						<label>Alamat</label>
+						<textarea name="alamat" cols="40" rows="3"></textarea>
+					</p>
+					<p> 
+						<label>No.Telepon</label>
+						<input type="text" name="no.telp" value="" size="40">	
+					</p>
+					<p> 
+						<label>E-mail</label>
+						<input type="text" name="e-mail" value="" size="40">
+					</p>
+				</fieldset>
+					<p>
+						<label>Pilihan Minuman</label>
+						<select name="status">
+							<option>Pilih Satu</option>
+							<option value="Avocado Coffee">Avocado Coffee</option>
+							<option value="Americano">Americano</option>
+							<option value="Mocha Latte">Mocha Latte</option>
+							<option value="Cappuccino">Cappuccino</option>
+							<option value="Caramel Latte">Caramel Latte</option>
+						</select>			
+					</p>
+					<p>
+						<label>Topping</label>
+						<select name="Topping" size="5" multiple>
+							<option selected>Original</option>
+							<option>Espresso</option>
+							<option>Gula Aren</option>
+							<option>Grass Jelly</option>
+							<option>Oreo</option>
+						</select>
+					</p>
+						<p><input type="submit"> <input type="reset"></p>
+					<label>Jumlah Pesanan<input type="number" name="guest" min="1" max="5"></label>					
+			</form>
+	</body>
