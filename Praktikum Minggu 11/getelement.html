@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Element</title>
+</head>
+<body>
+	<h1>Belajar DOM JavaScript</h1>
+	
+	<div id="box"></div>
+	
+	<div class="boks"></div> <!-- 0 -->
+	<div class="boks"></div> <!-- 1 -->
+	<div class="boks"></div> <!-- 2 -->
+	
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<!-- buat script -->
+	<script>
+		// Akses ID
+		let box = document.getElementById("box");
+		box.innerHTML = "Document Object Model JS"
+		// Akses class
+		let boks = document.getElementsByClassName("boks");
+		boks[0].innerHTML = "Ayam";
+		boks[1].innerHTML = "Kucing";
+		boks[2].innerHTML = "Kambing";
+		
+		// ambil element selector
+		let li = document.getElementsByTagName("li");
+		li[0].innerHTML = "Bootstrap";
+		li[1].innerHTML = "PHP";
+		li[2].innerHTML = "PYTHON";
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element</title>
+</head>
+<body>
+	<h1>Belajar Method dengan JavaScript</h1>
+	
+	<!-- buat element div -->
+	<div id="box1">
+		<div id="p">Paragraf 1</div>
+		<!-- <h2>Belajar Web</h2> -->
+	</div>
+	
+	<script>
+		// Buat Element h2
+		let el = document.createElement("h2");
+		// buat value menggunakan method createTextNode 
+		let text = document.createTextNode("Belajar JavaScript");
+		// ambil id box
+		let box = document.getElementById("box1");
+		
+		// menambahkan text ke dalam element h2
+		el.appendChild(text);
+		// menambahkan element ke dalam element div ber id box1
+		box.appendChild(el);
+		// hapus element menggunakan method remove child
+		box.removeChild(el);
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+	<form id="form">
+
+	</form>
+	
+	
+	<script>
+	function kirim(){
+		// tangkap inputan username, simpan ke variable nama
+		let nama = document.getElementByID("username").value;
+		// tangkap inputan password, simpan ke variabel password
+		let pass = document.getElementByID("password").value;
+		// simpan hak akses id form ke variabel form
+		let form = document.getElementByID("form");
+		
+		// Logic percabangan
+		if (nama == "admin" && pass == "integrity"){
+			form.setAttribute("action","dashboard.html")
+			window.alert("Login Berhasil");
+		} else {
+			window.alert("Login Gagal");
+		}
+	}
+	</script>
